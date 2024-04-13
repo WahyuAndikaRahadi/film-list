@@ -19,7 +19,7 @@ const App = () => {
 
           <div className="Movie-wrapper" key={i}>
             <div className="Movie-title">{movie.title}</div>
-            <img className="movie-image" src={`${ImgUrl}/${movie.poster_path}` } />
+            <img className="movie-image" alt={movie.title} src={`${ImgUrl}/${movie.poster_path}` } />
             <div className="Movie-date">Tanggal Rilis : {movie.release_date}</div>
             <div className="Movie-rate">Rating Film : {movie.vote_average}</div>
           </div>
